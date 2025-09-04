@@ -2,12 +2,6 @@
 
 Bem-vindo ao MyWorld, uma aplicação web elegante e interativa para descobrir, pesquisar e salvar os seus filmes favoritos. Utilizando a API do The Movie Database (TMDB), o MyWorld oferece uma experiência de utilizador fluida e moderna para todos os entusiastas de cinema.
 
-## 🎬 Demonstração
-
-![Demonstração do MyWorld](https://i.imgur.com/your-demo-image.gif)
-*Substitua o link acima por um GIF ou imagem de demonstração do seu projeto.*
-
----
 
 ## ✨ Funcionalidades
 
