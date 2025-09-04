@@ -1,0 +1,105 @@
+/* --- Estilos Gerais --- */
+body {
+    background-color: #121212; /* Fundo escuro para um tema de cinema */
+    color: #ffffff; /* Texto branco para contraste */
+    font-family: 'Poppins', sans-serif; /* Uma fonte moderna e limpa */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Seção de Cabeçalho e Busca --- */
+div {
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limita a largura para telas grandes */
+    margin-bottom: 40px;
+}
+
+.titleName {
+    font-size: 2.8rem; /* Tamanho grande para o título principal */
+    font-weight: 700;
+    color: #E50914; /* Vermelho inspirado na Netflix */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+.titleP {
+    font-size: 1.1rem;
+    color: #a0a0a0; /* Cinza claro para o subtítulo */
+    margin-bottom: 30px;
+    letter-spacing: 1px; /* Espaçamento entre as letras */
+}
+
+.searchStyle {
+    width: 60%;
+    padding: 15px 20px;
+    border: 2px solid #333;
+    border-radius: 50px; /* Bordas bem arredondadas */
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 1rem;
+    outline: none; /* Remove a borda azul ao focar */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchStyle::placeholder {
+    color: #666; /* Cor do texto de placeholder */
+}
+
+.searchStyle:focus {
+    border-color: #E50914; /* Muda a cor da borda ao focar */
+    box-shadow: 0 0 10px rgba(229, 9, 20, 0.5); /* Adiciona um brilho */
+}
+
+.searchBtn {
+    padding: 15px 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #E50914;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.searchBtn:hover {
+    background-color: #f61a27; /* Cor um pouco mais clara ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação */
+}
+
+/* --- Container dos Filmes --- */
+.container {
+    display: grid;
+    /* Cria colunas responsivas: preenche com o máximo de colunas de 250px que couberem */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px; /* Espaçamento entre os cards de filme */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container */
+}
+
+/* --- Estilos para telas menores (Responsividade) --- */
+@media (max-width: 600px) {
+    .titleName {
+        font-size: 2rem;
+    }
+
+    .titleP {
+        font-size: 0.9rem;
+    }
+
+    .searchStyle {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .searchBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
